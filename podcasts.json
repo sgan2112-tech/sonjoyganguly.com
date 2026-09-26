@@ -1,0 +1,112 @@
+{
+  "_schema": {
+    "note": "Edit this file to add or update Podcast & Media entries. The site reads it automatically — no HTML editing needed. Delete this _schema block if you like; it's ignored by the site.",
+    "fields": {
+      "id": "Unique slug for the entry (lowercase, hyphens). Used only as a key.",
+      "title": "Episode / talk / article title, shown as the headline.",
+      "type": "One of: podcast, talk, keynote, video, article",
+      "role": "'host' if Sonjoy is interviewing a guest on his own show, 'guest' if Sonjoy is the one being interviewed/featured elsewhere.",
+      "show": "Name of the podcast, publication, or event series.",
+      "date": "Month/year as YYYY-MM (e.g. 2026-07). Leave as null if unknown.",
+      "guests": "Array of guest objects for role:'host' entries: [{ name, title, company }]. Leave as [] for role:'guest' entries.",
+      "thumbnail": "Path to a thumbnail image, e.g. images/podcast-thumbnails/name.png. Leave null if none — all thumbnails should live in images/podcast-thumbnails/.",
+      "links": "Object with any of: spotify, apple, youtube, url (generic fallback link for articles/talks)."
+    }
+  },
+  "episodes": [
+    {
+      "id": "michael-affronti-personal-fleet-ai-agents",
+      "title": "What a CPBO Learned Building a Personal Fleet of AI Agents",
+      "type": "podcast",
+      "role": "host",
+      "show": "Product Talk Podcast",
+      "date": "2026-09",
+      "guests": [
+        { "name": "Michael Affronti", "title": "CPBO", "company": "DriveCentric" }
+      ],
+      "thumbnail": "images/podcast-thumbnails/michael-affronti.png",
+      "links": {
+        "spotify": "https://open.spotify.com/episode/4Sh2CRjSB0ggGGZvbwBwfL",
+        "apple": "https://podcasts.apple.com/us/podcast/what-a-cpbo-learned-building-a-personal-fleet-of-ai-agents/id1038890550?i=1000790929551",
+        "youtube": "https://youtu.be/Hv4GBWwVNiA"
+      }
+    },
+    {
+      "id": "adam-edwards-technical-moat",
+      "title": "Brainlabs CPO on the End of the Technical Moat",
+      "type": "podcast",
+      "role": "host",
+      "show": "Product Talk Podcast",
+      "date": "2026-07",
+      "guests": [
+        { "name": "Adam Edwards", "title": "CPO", "company": "Brainlabs" }
+      ],
+      "thumbnail": "images/podcast-thumbnails/adam-edwards.png",
+      "links": {
+        "spotify": "https://open.spotify.com/episode/5LCI9mmFbwvP7mxiu2D8Fi",
+        "apple": "https://podcasts.apple.com/us/podcast/brainlabs-cpo-on-the-end-of-the-technical-moat/id1038890550?i=1000775644578",
+        "youtube": "https://www.youtube.com/watch?v=qrPfVA0rLS0"
+      }
+    },
+    {
+      "id": "sam-somashekar-syntheseed",
+      "title": "How Syntheseed's CPO is Rethinking Product Leadership in Real Time",
+      "type": "podcast",
+      "role": "host",
+      "show": "Product Talk Podcast",
+      "date": "2026-06",
+      "guests": [
+        { "name": "Sam Somashekar", "title": "CPO", "company": "Syntheseed" }
+      ],
+      "thumbnail": "images/podcast-thumbnails/sam-somashekar.png",
+      "links": {
+        "spotify": "https://open.spotify.com/episode/3xHAPOenlDM1hIibKe3IEi?si=B1Ycl_RzQv6B2_GZtGH_yQ",
+        "apple": "https://podcasts.apple.com/us/podcast/how-syntheseed-cpo-is-rethinking-product-leadership/id1038890550?i=1000773116303",
+        "youtube": null
+      }
+    },
+    {
+      "id": "piyanka-jain-ai-super-analysts",
+      "title": "How AI Super Analysts are Changing the Way Product Leaders Think",
+      "type": "podcast",
+      "role": "host",
+      "show": "Product Talk Podcast",
+      "date": "2026-05",
+      "guests": [
+        { "name": "Piyanka Jain", "title": "CEO", "company": "AskEnola" }
+      ],
+      "thumbnail": "images/podcast-thumbnails/piyanka-jain.png",
+      "links": {
+        "spotify": "https://open.spotify.com/episode/1L3oGF6S1NjkVTtLDiZgAR",
+        "apple": "https://podcasts.apple.com/us/podcast/how-ai-super-analysts-are-changing-the-way-product/id1038890550?i=1000767946631",
+        "youtube": null
+      }
+    },
+    {
+      "id": "ownership-mindset-talk",
+      "title": "Building an Ownership Mindset: How PMs Drive Business Impact",
+      "type": "talk",
+      "role": "guest",
+      "show": "Products That Count · Virtual Speaker Series",
+      "date": "2026-02",
+      "guests": [],
+      "thumbnail": null,
+      "links": {
+        "url": "https://productsthatcount.com/building-an-ownership-mindset-how-pms-drive-business-impact/"
+      }
+    },
+    {
+      "id": "soundbites-nanochomp",
+      "title": "Sound BITES: From Product Leadership to Strategy at Scale",
+      "type": "podcast",
+      "role": "guest",
+      "show": "Nanochomp — Sound BITES",
+      "date": null,
+      "guests": [],
+      "thumbnail": null,
+      "links": {
+        "url": "https://www.nanochomp.com/soundbitespodcast/v/e37-sound-bites-sonjoy-ganguly-digitalzone"
+      }
+    }
+  ]
+}

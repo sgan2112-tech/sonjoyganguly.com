@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonjoy Ganguly — Product &amp; Revenue Executive</title>
+  <meta name="description" content="Sonjoy Ganguly is a C-suite product, marketing, and revenue executive with 30+ years of experience transforming organizations across ad tech, martech, SaaS, and financial services.">
+  <meta property="og:title" content="Sonjoy Ganguly — Product & Revenue Executive">
+  <meta property="og:description" content="C-suite executive with 30+ years transforming product, marketing, and revenue organizations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sonjoyganguly.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0a0a0a;
+      --paper: #f5f0e8;
+      --warm: #f0e8d8;
+      --accent: #b45309;
+      --accent-light: #d97706;
+      --accent-bg: #fef3c7;
+      --slate: #44403c;
+      --stone: #78716c;
+      --muted: #a8a29e;
+      --divider: #d6d3d1;
+      --card: #faf8f4;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', -apple-system, sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    ::selection { background: var(--accent); color: #fff; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(245, 240, 232, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--divider);
+      transition: transform 0.3s ease;
+    }
+    nav .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem;
+    }
+    nav .logo {
+      font-family: var(--serif); font-weight: 900; font-size: 1.25rem;
+      color: var(--ink); text-decoration: none; letter-spacing: -0.02em;
+    }
+    nav .logo span { color: var(--accent); }
+    nav ul {
+      display: flex; list-style: none; gap: 2rem; align-items: center;
+    }
+    nav ul li a {
+      font-size: 0.85rem; font-weight: 500; text-decoration: none; color: var(--slate);
+      letter-spacing: 0.06em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    nav ul li a:hover { color: var(--accent); }
+    .nav-cta {
+      background: var(--ink); color: var(--paper) !important; padding: 0.5rem 1.25rem;
+      border-radius: 4px; text-transform: uppercase !important; font-weight: 700 !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--accent) !important; }
+
+    .hamburger {
+      display: none; background: none; border: none; cursor: pointer; padding: 4px;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px; background: var(--ink);
+      margin: 5px 0; transition: all 0.3s;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 8rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; top: -200px; right: -200px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(180,83,9,0.07) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: 'SG';
+      position: absolute; bottom: -60px; right: 40px;
+      font-family: var(--serif); font-weight: 900;
+      font-size: 28rem; color: rgba(10,10,10,0.025);
+      line-height: 1; pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1200px; margin: 0 auto; width: 100%;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+    }
+    .hero-text .overline {
+      font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 1.5rem; display: block;
+    }
+    .hero-text h1 {
+      font-family: var(--serif); font-size: 4.5rem; font-weight: 900;
+      line-height: 1.05; letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+    .hero-text h1 em {
+      font-style: italic; color: var(--accent);
+    }
+    .hero-text .subtitle {
+      font-size: 1.25rem; color: var(--slate); max-width: 500px;
+      margin-bottom: 2rem; line-height: 1.7;
+    }
+    .hero-links {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+    }
+    .hero-links a, .btn-primary, .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.75rem 1.5rem; font-size: 0.9rem; font-weight: 600;
+      text-decoration: none; border-radius: 4px; transition: all 0.25s;
+    }
+    .btn-primary {
+      background: var(--ink); color: var(--paper);
+    }
+    .btn-primary:hover { background: var(--accent); }
+    .btn-secondary {
+      background: transparent; color: var(--ink);
+      border: 2px solid var(--ink);
+    }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+    .hero-visual {
+      display: flex; justify-content: center; align-items: center;
+      position: relative;
+    }
+    .headshot-frame {
+      width: 380px; height: 460px;
+      background: var(--warm);
+      border: 2px solid var(--divider);
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+    .headshot-frame::before {
+      content: '';
+      position: absolute; inset: 8px;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      opacity: 0.3;
+      z-index: 1;
+    }
+    .headshot-frame img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+      display: block;
+    }
+
+    /* ── SECTION BASE ── */
+    section {
+      padding: 6rem 2rem;
+    }
+    .section-inner {
+      max-width: 1200px; margin: 0 auto;
+    }
+    .section-overline {
+      font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem;
+      display: block;
+    }
+    .section-title {
+      font-family: var(--serif); font-size: 3rem; font-weight: 900;
+      line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 1.5rem;
+    }
+    .section-desc {
+      font-size: 1.1rem; color: var(--slate); max-width: 640px;
+      line-height: 1.8; margin-bottom: 3rem;
+    }
+    .divider-line {
+      height: 1px; background: var(--divider); border: none;
+      max-width: 1200px; margin: 0 auto;
+    }
+
+    /* ── ABOUT ── */
+    #about { background: var(--ink); color: var(--paper); }
+    #about .section-overline { color: var(--accent-light); }
+    #about .section-desc { color: #d6d3d1; }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+    }
+    .about-narrative {
+      font-size: 1.05rem; line-height: 1.9; color: #d6d3d1;
+    }
+    .about-narrative p + p { margin-top: 1.5rem; }
+    .about-narrative strong { color: var(--paper); font-weight: 600; }
+    .stat-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+    }
+    .stat-card {
+      padding: 2rem; border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px;
+    }
+    .stat-card .number {
+      font-family: var(--serif); font-size: 3rem; font-weight: 900;
+      color: var(--accent-light); line-height: 1;
+    }
+    .stat-card .label {
+      font-size: 0.85rem; color: #a8a29e; margin-top: 0.5rem;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+
+    /* ── SECTION INTRO WITH PHOTO (reusable: used by Expertise and Career) ── */
+    .intro-with-photo {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem;
+      align-items: start; margin-bottom: 3rem;
+    }
+    .intro-with-photo .section-desc { margin-bottom: 0; }
+    .intro-photo-frame {
+      width: 100%; aspect-ratio: var(--photo-ratio, 4 / 5);
+      background: var(--warm);
+      border: 2px solid var(--divider);
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+    .intro-photo-frame::before {
+      content: '';
+      position: absolute; inset: 8px;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      opacity: 0.3;
+      z-index: 1;
+    }
+    .intro-photo-frame img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+      display: block;
+    }
+
+    /* ── EXPERTISE PILLARS ── */
+    .pillars-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+    }
+    .pillar-card {
+      background: var(--card);
+      border: 1px solid var(--divider);
+      border-radius: 6px;
+      padding: 2.5rem 2rem;
+      transition: all 0.3s;
+      position: relative; overflow: hidden;
+    }
+    .pillar-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--accent);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    .pillar-card:hover::before { transform: scaleX(1); }
+    .pillar-card:hover { border-color: var(--accent); }
+    .pillar-icon {
+      font-size: 2rem; margin-bottom: 1.25rem;
+      width: 48px; height: 48px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--accent-bg); border-radius: 8px;
+    }
+    .pillar-card h3 {
+      font-family: var(--serif); font-size: 1.35rem; font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .pillar-card p {
+      font-size: 0.95rem; color: var(--slate); line-height: 1.7;
+    }
+
+    /* ── CAREER TIMELINE ── */
+    #career { background: var(--warm); }
+    .career-layout {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem;
+      align-items: start;
+    }
+    .career-photo {
+      position: sticky; top: 6.5rem;
+    }
+    .timeline {
+      position: relative; padding-left: 3rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute; top: 0; bottom: 0; left: 14px;
+      width: 2px; background: var(--divider);
+    }
+    .timeline-item {
+      position: relative; margin-bottom: 2.5rem;
+      padding-left: 2rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute; left: -2.45rem; top: 8px;
+      width: 12px; height: 12px; background: var(--accent);
+      border: 3px solid var(--warm);
+      border-radius: 50%;
+    }
+    .timeline-item .era {
+      font-family: var(--mono); font-size: 0.72rem; color: var(--accent);
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.25rem;
+    }
+    .timeline-item h3 {
+      font-family: var(--serif); font-size: 1.3rem; font-weight: 700;
+      margin-bottom: 0.15rem;
+    }
+    .timeline-item .org {
+      font-weight: 600; color: var(--slate); font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .timeline-item p {
+      font-size: 0.9rem; color: var(--stone); line-height: 1.7;
+      max-width: 560px;
+    }
+
+    /* ── PODCAST / MEDIA ── */
+    .media-layout {
+      display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 4rem;
+      align-items: start;
+    }
+    .media-photo-frame {
+      width: 100%; aspect-ratio: 16 / 9;
+      background: var(--warm);
+      border: 2px solid var(--divider);
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .media-photo-frame::before {
+      content: '';
+      position: absolute; inset: 8px;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      opacity: 0.3;
+      z-index: 1;
+    }
+    .media-photo-frame img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+      display: block;
+    }
+    .media-intro h3 {
+      font-family: var(--serif); font-size: 1.6rem; font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .media-intro p {
+      color: var(--slate); line-height: 1.8; margin-bottom: 1.5rem;
+    }
+    .media-list {
+      display: flex; flex-direction: column; gap: 1rem;
+    }
+    .media-group-label {
+      font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--stone);
+      display: flex; align-items: center; gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .media-group-label:first-child { margin-top: 0; }
+    .media-group-label::after {
+      content: ''; flex: 1; height: 1px; background: var(--divider);
+    }
+
+    /* Episode cards (hosted episodes with platform links) */
+    .episode-card {
+      background: var(--card); border: 1px solid var(--divider);
+      border-radius: 6px; padding: 1.35rem 1.5rem;
+      display: grid; grid-template-columns: 84px 1fr; gap: 1.25rem;
+      align-items: start;
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .episode-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 24px rgba(180,83,9,0.08);
+    }
+    .ep-thumb {
+      position: relative; width: 84px; height: 84px;
+      border-radius: 5px; overflow: hidden; flex-shrink: 0;
+      background: var(--ink);
+      display: grid; place-items: center;
+    }
+    .ep-thumb::before {
+      content: attr(data-initials);
+      font-family: var(--serif); font-size: 1.4rem; font-weight: 700;
+      color: var(--paper); opacity: 0.55;
+    }
+    .ep-thumb img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .ep-body { min-width: 0; }
+    .ep-title {
+      font-size: 1rem; font-weight: 600; line-height: 1.4;
+      margin-bottom: 0.3rem;
+    }
+    .ep-title a { color: inherit; text-decoration: none; }
+    .ep-title a:hover { color: var(--accent); }
+    .ep-meta {
+      font-size: 0.78rem; color: var(--stone); margin-bottom: 0.85rem;
+    }
+    .ep-guest { color: var(--slate); font-weight: 500; }
+
+    /* Platform link pills */
+    .ep-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .plat {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.08em;
+      text-transform: uppercase; font-weight: 500;
+      color: var(--slate); text-decoration: none;
+      background: var(--paper); border: 1px solid var(--divider);
+      border-radius: 999px; padding: 0.38rem 0.7rem;
+      transition: border-color 0.2s, transform 0.2s, background 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+    .plat svg { width: 14px; height: 14px; flex-shrink: 0; }
+    .plat:hover { transform: translateY(-1px); color: var(--ink); }
+    .plat-spotify:hover { border-color: #1db954; background: rgba(29,185,84,0.08); }
+    .plat-apple:hover   { border-color: #9933cc; background: rgba(153,51,204,0.08); }
+    .plat-youtube:hover { border-color: #ff0000; background: rgba(255,0,0,0.07); }
+    .plat-soon {
+      opacity: 0.45; cursor: default; border-style: dashed;
+    }
+    .plat-soon:hover { transform: none; color: var(--slate); }
+
+    /* Appearance / talk cards (single link) */
+    .media-card {
+      background: var(--card); border: 1px solid var(--divider);
+      border-radius: 6px; padding: 1.5rem 1.75rem;
+      text-decoration: none; color: inherit;
+      display: flex; align-items: flex-start; gap: 1.25rem;
+      transition: all 0.25s;
+    }
+    .media-card:hover { border-color: var(--accent); transform: translateX(4px); }
+    .media-card .type-badge {
+      font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--paper);
+      padding: 0.25rem 0.5rem; border-radius: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge-podcast { background: #7c3aed; }
+    .badge-video { background: #dc2626; }
+    .badge-article { background: var(--accent); }
+    .badge-talk { background: #0369a1; }
+    .badge-keynote { background: #0f766e; }
+    .media-card h4 {
+      font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; line-height: 1.4;
+    }
+    .media-card .media-meta {
+      font-size: 0.8rem; color: var(--stone);
+    }
+    .media-card.placeholder-card {
+      border-style: dashed; opacity: 0.6; cursor: default;
+    }
+
+    /* ── PUBLICATIONS ── */
+    #publications { background: var(--warm); }
+    .pub-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+    }
+    .pub-card {
+      background: var(--card); border: 1px solid var(--divider);
+      border-radius: 6px; padding: 2rem;
+      text-decoration: none; color: inherit;
+      transition: all 0.25s;
+      display: block;
+    }
+    .pub-card:hover { border-color: var(--accent); box-shadow: 0 4px 24px rgba(180,83,9,0.08); }
+    .pub-card .pub-source {
+      font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+      display: block;
+    }
+    .pub-card h4 {
+      font-family: var(--serif); font-size: 1.15rem; font-weight: 700;
+      line-height: 1.4; margin-bottom: 0.5rem;
+    }
+    .pub-card p {
+      font-size: 0.85rem; color: var(--stone); line-height: 1.6;
+    }
+
+    /* ── PHILOSOPHY ── */
+    .philosophy-block {
+      background: var(--ink); color: var(--paper);
+      padding: 5rem 2rem; text-align: center;
+    }
+    .philosophy-block blockquote {
+      font-family: var(--serif); font-size: 2.2rem; font-weight: 400;
+      font-style: italic; line-height: 1.5; max-width: 800px; margin: 0 auto 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .philosophy-block cite {
+      font-family: var(--mono); font-size: 0.75rem; font-style: normal;
+      color: var(--accent-light); letter-spacing: 0.15em; text-transform: uppercase;
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--paper); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+      align-items: start;
+    }
+    .contact-links {
+      display: flex; flex-direction: column; gap: 1.25rem;
+    }
+    .contact-link {
+      display: flex; align-items: center; gap: 1rem;
+      text-decoration: none; color: var(--ink);
+      font-size: 1.1rem; font-weight: 500;
+      padding: 1rem 1.5rem; border-radius: 6px;
+      border: 1px solid var(--divider);
+      transition: all 0.25s;
+    }
+    .contact-link:hover { border-color: var(--accent); color: var(--accent); background: var(--card); }
+    .contact-link .link-icon {
+      width: 40px; height: 40px; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.8rem; color: var(--stone);
+      border-top: 1px solid var(--divider);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    /* ── ANIMATIONS ── */
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1; transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      .hero-inner { grid-template-columns: 1fr; text-align: center; }
+      .hero-text h1 { font-size: 3rem; }
+      .hero-text .subtitle { margin-left: auto; margin-right: auto; }
+      .hero-links { justify-content: center; }
+      .hero-visual { margin-top: 2rem; }
+      .headshot-frame { width: 280px; height: 340px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .intro-with-photo { grid-template-columns: 1fr; }
+      .intro-photo-frame { aspect-ratio: 16 / 10; order: -1; }
+      .career-layout { grid-template-columns: 1fr; }
+      .career-photo { position: static; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .media-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .pub-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .section-title { font-size: 2.25rem; }
+      nav ul { display: none; }
+      .hamburger { display: block; }
+      nav ul.open {
+        display: flex; flex-direction: column;
+        position: absolute; top: 100%; left: 0; right: 0;
+        background: var(--paper); border-top: 1px solid var(--divider);
+        padding: 1.5rem 2rem; gap: 1.25rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero { padding: 7rem 1.25rem 3rem; }
+      .hero-text h1 { font-size: 2.4rem; }
+      section { padding: 4rem 1.25rem; }
+      .stat-grid { grid-template-columns: 1fr; }
+      .hero::after { font-size: 16rem; right: 10px; bottom: -30px; }
+      .episode-card { grid-template-columns: 64px 1fr; gap: 1rem; padding: 1.15rem 1.15rem; }
+      .ep-thumb { width: 64px; height: 64px; }
+      .plat { font-size: 0.6rem; padding: 0.35rem 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════ NAV ══════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">Sonjoy<span>.</span></a>
+    <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#media">Podcast &amp; Media</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact" class="nav-cta">Connect</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="overline">Product · Marketing · Revenue · Operations</span>
+      <h1>Build it. <em>Scale it.</em> Lead it.</h1>
+      <p class="subtitle">I'm Sonjoy Ganguly — a C-suite executive with 30+ years transforming product, marketing, and revenue organizations across ad tech, martech, SaaS, and financial services. I don't just ship products; I build the strategies, teams, and operating systems that create durable business value.</p>
+      <div class="hero-links">
+        <a href="#contact" class="btn-primary">Let's Connect</a>
+        <a href="#media" class="btn-secondary">Hear My Podcast</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="headshot-frame">
+        <img src="Sonjoy-Ganguly-Web.jpg" alt="Sonjoy Ganguly — Product & Revenue Executive">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="section-inner reveal">
+    <span class="section-overline">About</span>
+    <h2 class="section-title" style="color: var(--paper);">The Operator Behind<br>the Transformation</h2>
+    <div class="about-grid">
+      <div class="about-narrative">
+        <p>I've spent my career at the intersection of <strong>product strategy, revenue growth, and operational excellence</strong>. From Media Ocean & DoubleClick in the early days of digital advertising to CPO roles at MikMak and DigitalZone, I've led organizations through the hardest inflection points — scaling teams from startup to growth stage, turning around stalled product lines, and building go-to-market engines that actually work.</p>
+        <p>My path has taken me through <strong>GroupM/WPP, Deloitte, Deutsche Bank, and Madison Logic</strong> — spanning ad tech, martech, financial services, and enterprise SaaS. At each stop, the mandate was the same: take something complex, make it simple, make it scale, and make it profitable. I've held P&L ownership, managed engineering and IT organizations, led marketing and partnerships functions, and served as the connective tissue between the C-suite vision and the execution on the ground.</p>
+        <p>I studied at <strong>NYU Stern School of Business</strong>, and I'm a frequent speaker and published contributor on topics including product-led growth, account-based marketing, B2B innovation, and executive leadership.</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="number">30+</div>
+          <div class="label">Years of Leadership</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">8+</div>
+          <div class="label">C-Suite / SVP Roles</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">6</div>
+          <div class="label">Industries Spanned</div>
+        </div>
+        <div class="stat-card">
+          <div class="number">NYU</div>
+          <div class="label">Stern School of Business</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EXPERTISE ══════════ -->
+<section id="expertise">
+  <div class="section-inner reveal">
+    <span class="section-overline">Areas of Expertise</span>
+    <div class="intro-with-photo">
+      <div>
+        <h2 class="section-title">Not Just Product.<br>The Whole Business.</h2>
+        <p class="section-desc">Most executives specialize. I integrate. My career has been defined by bridging the gaps between product, marketing, revenue, and technology — building organizations where every function operates as a single growth engine.</p>
+      </div>
+      <div class="intro-photo-frame" style="--photo-ratio: 3 / 2;">
+        <img src="images/expertise-keynote.jpg" alt="Sonjoy Ganguly presenting on AI, data, and human insight in B2B growth at the B2B Growth Summit">
+      </div>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">🎯</div>
+        <h3>Product Strategy &amp; Management</h3>
+        <p>End-to-end product leadership: vision, roadmapping, discovery, delivery, and lifecycle management. Building product organizations from scratch and transforming existing ones for scale.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">📈</div>
+        <h3>Revenue &amp; Go-to-Market</h3>
+        <p>P&L ownership with a track record of driving revenue growth through pricing strategy, market positioning, sales enablement, and data-driven GTM execution.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🔗</div>
+        <h3>Marketing &amp; Partnerships</h3>
+        <p>Demand generation, ABM, content strategy, brand positioning, and strategic partnerships. Deep expertise connecting marketing investment to measurable pipeline outcomes.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">⚙️</div>
+        <h3>Engineering &amp; IT</h3>
+        <p>Leading engineering teams, managing technical debt, driving platform modernization, and aligning technology investment with business priorities.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🏗️</div>
+        <h3>Operations &amp; Scale</h3>
+        <p>Building operational frameworks, process optimization, organizational design, and cross-functional alignment that enable companies to scale efficiently.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">💡</div>
+        <h3>Innovation &amp; Transformation</h3>
+        <p>Identifying market inflection points, leading digital transformation, and cultivating a culture of innovation across the organization. Turning complexity into competitive advantage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CAREER ══════════ -->
+<section id="career">
+  <div class="section-inner reveal">
+    <span class="section-overline">Career Trajectory</span>
+    <div class="career-layout">
+      <div>
+        <h2 class="section-title">Three Decades of Building</h2>
+        <p class="section-desc">A selective overview of the leadership roles and organizations that have shaped my approach to building products, teams, and businesses.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="era">2026 – Present</div>
+            <h3>Product Executive-in-Residence</h3>
+            <div class="org">Mighty Capital</div>
+            <p>Participate in funding evaluation for industry leading venture capital funds.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="era">2026 – Present</div>
+            <h3>Product Talk Podcast Host</h3>
+            <div class="org">Products That Count</div>
+            <p>Speak with industry guests on the topics today's product leaders are concerned with.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="era">2026 – Present</div>
+            <h3>Advisory Council</h3>
+            <div class="org">Products That Count</div>
+            <p>Consult with leadership and clients on product management best practices.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="era">2024</div>
+            <h3>Chief Product Officer</h3>
+            <div class="org">DigitalZone</div>
+            <p>Led product strategy and execution for B2B demand generation platform. Drove product-led growth initiatives and built cross-functional product organization.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="era">2022</div>
+            <h3>Advisor</h3>
+            <div class="org">Frequency</div>
+            <p>Consult with CEO and product leaders to define product and go-to-market strategy.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="era">2021 – 2023</div>
+            <h3>Chief Product Officer</h3>
+            <div class="org">MikMak</div>
+            <p>Owned product vision, roadmap, and P&L for e-commerce enablement platform serving Fortune 500 brands. Scaled product and engineering teams during critical growth phase.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="era">2017 – 2020</div>
+            <h3>SVP, Product Management</h3>
+            <div class="org">Madison Logic</div>
+            <p>Built and led the product management organization for the leading ABM platform. Transformed product strategy, launched new data products, and drove category-defining innovation.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="era">2015 – 2017</div>
+            <h3>Strategy, Brand &amp; Innovation</h3>
+            <div class="org">Deloitte</div>
+            <p>Managed definition and execution of new product strategies to help the firm and its clients adopt emerging technologies and create innovative, market-leading solutions at scale.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="era">2010 – 2015</div>
+            <h3>Executive Leadership Roles</h3>
+            <div class="org">GroupM / WPP (Xaxis)</div>
+            <p>Led programmatic product strategy and product set transformation. Drove offerings that kept the organization ahead of competitors in the rapidly evolving ad tech landscape.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="era">Earlier Career</div>
+            <h3>Product &amp; Technology Leadership</h3>
+            <div class="org">DoubleClick · Deutsche Bank · ABC Television</div>
+            <p>Foundational roles in product management and technology leadership across digital advertising, financial services, and media — building the cross-industry perspective that defines my approach today.</p>
+          </div>
+        </div>
+      </div>
+      <div class="intro-photo-frame career-photo">
+        <img src="images/airport-nighttime.jpg" alt="Sonjoy Ganguly reviewing work on a tablet at an airport lounge at night">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PHILOSOPHY QUOTE ══════════ -->
+<div class="philosophy-block">
+  <blockquote>"Great products aren't built by product teams alone. They're built when every function — marketing, engineering, sales, operations — operates with shared intent and shared accountability."</blockquote>
+  <cite>— Sonjoy Ganguly</cite>
+</div>
+
+<!-- ══════════ PODCAST & MEDIA ══════════ -->
+<section id="media">
+  <div class="section-inner reveal">
+    <span class="section-overline">Podcast &amp; Media</span>
+    <h2 class="section-title">Conversations on<br>Product Leadership</h2>
+    <div class="media-layout">
+      <div class="media-intro">
+        <div class="media-photo-frame">
+          <img src="images/podcast-photo.jpg" alt="Sonjoy Ganguly recording the Product Talk podcast">
+        </div>
+        <h3>The Product Leadership Podcast</h3>
+        <p>I host conversations with product executives, founders, and operators about the real work of building products and leading teams — the strategic frameworks, the hard decisions, and the lessons that don't fit neatly into a LinkedIn post.</p>
+        <p>I also appear as a guest on industry podcasts and speak at conferences on topics including product-led growth, B2B marketing innovation, and executive leadership.</p>
+        <a href="#contact" class="btn-primary" style="margin-top:0.5rem;">Be a Guest on the Show →</a>
+      </div>
+      <div class="media-list" id="mediaList">
+        <!-- Populated automatically from podcasts.json — see the script at the bottom of the page -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider-line">
+
+<!-- ══════════ PUBLICATIONS ══════════ -->
+<section id="publications">
+  <div class="section-inner reveal">
+    <span class="section-overline">Published Writing</span>
+    <h2 class="section-title">Insights &amp; Industry POV</h2>
+    <p class="section-desc">Selected articles and thought leadership on product management, B2B marketing strategy, and the evolving landscape of digital business.</p>
+    <div class="pub-grid">
+      <a href="https://martech.org/account-based-marketing-why-b2b-marketers-need-to-shift-thinking/" class="pub-card" target="_blank">
+        <span class="pub-source">MarTech</span>
+        <h4>Why B2B Marketers Need to Shift Their Thinking on Account-Based Marketing</h4>
+        <p>How the rise of ABM is redefining how marketers think about accounts, audiences, and engagement.</p>
+      </a>
+      <a href="https://martech.org/b2b-lead-generation-formula-4-vs/" class="pub-card" target="_blank">
+        <span class="pub-source">MarTech</span>
+        <h4>The B2B Lead-Generation Formula: The 4 V's</h4>
+        <p>A tactical framework for achieving lead-generation volume, velocity, value, and variability.</p>
+      </a>
+      <a href="https://martech.org/rethinking-b2b-data-strategy-third-party-data/" class="pub-card" target="_blank">
+        <span class="pub-source">MarTech</span>
+        <h4>Rethinking Your B2B Data Strategy in a Third-Party Data World</h4>
+        <p>How to navigate the evolving third-party data landscape and future-proof your marketing stack.</p>
+      </a>
+      <a href="https://www.marketingprofs.com/articles/2017/32782/how-to-make-the-move-from-campaign-based-marketing-to-account-based-marketing" class="pub-card" target="_blank">
+        <span class="pub-source">MarketingProfs</span>
+        <h4>From Campaign-Based to Account-Based Marketing</h4>
+        <p>The strategic shift every B2B marketing organization needs to make — and how to execute it.</p>
+      </a>
+      <a href="https://martech.org/getting-b2b-content-marketing-right-stop-talking-start-generating-demand/" class="pub-card" target="_blank">
+        <span class="pub-source">MarTech</span>
+        <h4>Getting Content Marketing Right: Stop Talking, Start Generating Demand</h4>
+        <p>How to turn content strategy from thought leadership theater into a real demand-generation engine.</p>
+      </a>
+      <a href="https://martech.org/marketing-punching-weight-class/" class="pub-card" target="_blank">
+        <span class="pub-source">MarTech</span>
+        <h4>How to Punch Above Your Weight Class in B2B Marketing</h4>
+        <p>Strategic approaches to compete with larger organizations through smarter marketing execution.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="section-inner reveal">
+    <span class="section-overline">Get in Touch</span>
+    <h2 class="section-title">Let's Build<br>Something Together</h2>
+    <div class="contact-grid">
+      <div>
+        <p class="section-desc" style="margin-bottom: 2rem;">Whether you're looking for executive leadership, advisory partnership, a podcast guest, an industry thought leader, a speaker for your event / meeting, or a collaborator on what's next — I'm always open to a conversation.</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/sonjoy/" class="contact-link" target="_blank">
+          <span class="link-icon" style="background: #0a66c2; color: #fff;">in</span>
+          LinkedIn — /in/sonjoy
+        </a>
+        <a href="mailto:sonjoy@sonjoyganguly.com" class="contact-link">
+          <span class="link-icon" style="background: var(--accent-bg); color: var(--accent);">✉</span>
+          sonjoy@sonjoyganguly.com
+        </a>
+        <a href="https://calendly.com/" class="contact-link" target="_blank">
+          <span class="link-icon" style="background: #e0f2fe; color: #0369a1;">📅</span>
+          Schedule a Conversation
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <p>&copy; 2026 Sonjoy Ganguly. All rights reserved. &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/sonjoy/" target="_blank">LinkedIn</a></p>
+</footer>
+
+<!-- ══════════ SCROLL ANIMATIONS ══════════ -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Close mobile nav on link click
+  document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('nav ul').classList.remove('open');
+    });
+  });
+</script>
+
+<!-- ══════════ PODCAST & MEDIA — DATA-DRIVEN RENDER ══════════ -->
+<!-- Content lives in podcasts.json. Add/edit an entry there and it appears here automatically — no HTML edits needed. -->
+<script>
+(function () {
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  const ICONS = {
+    spotify: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1db954" d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.24-.899-.6-.12-.421.24-.781.6-.901 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.241 1.082zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>',
+    apple: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2" width="6" height="11" rx="3" fill="#9933cc"/><path d="M5.5 10.8a6.5 6.5 0 0 0 13 0" fill="none" stroke="#9933cc" stroke-width="2" stroke-linecap="round"/><path d="M12 17.4v3.4" fill="none" stroke="#9933cc" stroke-width="2" stroke-linecap="round"/></svg>',
+    youtube: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ff0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><path fill="#fff" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>'
+  };
+
+  const BADGE_CLASS = { podcast: 'badge-podcast', video: 'badge-video', article: 'badge-article', talk: 'badge-talk', keynote: 'badge-keynote' };
+
+  function escapeHtml(str) {
+    return String(str == null ? '' : str).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+  }
+
+  function formatDate(ym) {
+    if (!ym) return '';
+    const parts = String(ym).split('-');
+    const y = parseInt(parts[0], 10);
+    const m = parseInt(parts[1], 10);
+    if (!y || !m || m < 1 || m > 12) return String(ym);
+    return `${MONTHS[m - 1]} ${y}`;
+  }
+
+  function initials(name) {
+    if (!name) return '';
+    return name.trim().split(/\s+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  }
+
+  function platPill(platform, url) {
+    const label = platform.charAt(0).toUpperCase() + platform.slice(1);
+    const icon = ICONS[platform] || '';
+    if (url) {
+      return `<a href="${escapeHtml(url)}" class="plat plat-${platform}" target="_blank" rel="noopener" aria-label="Listen on ${label}">${icon}<span>${label}</span></a>`;
+    }
+    return `<span class="plat plat-${platform} plat-soon" title="${label} link coming soon">${icon}<span>${label}</span></span>`;
+  }
+
+  function episodeCardHTML(ep) {
+    const links = ep.links || {};
+    const guest = (ep.guests && ep.guests[0]) || {};
+    const metaParts = [];
+    if (guest.name) metaParts.push(`<span class="ep-guest">${escapeHtml(guest.name)}</span>`);
+    const roleCompany = [guest.title, guest.company].filter(Boolean).join(', ');
+    if (roleCompany) metaParts.push(escapeHtml(roleCompany));
+    const dateLabel = formatDate(ep.date);
+    if (dateLabel) metaParts.push(dateLabel);
+
+    const primaryLink = links.youtube || links.spotify || links.apple || links.url || '#';
+    const thumbImg = ep.thumbnail
+      ? `<img src="${escapeHtml(ep.thumbnail)}" alt="${escapeHtml(ep.title)}" loading="lazy" onerror="this.remove()">`
+      : '';
+
+    return `
+      <article class="episode-card">
+        <div class="ep-thumb" data-initials="${escapeHtml(initials(guest.name))}">${thumbImg}</div>
+        <div class="ep-body">
+          <h4 class="ep-title"><a href="${escapeHtml(primaryLink)}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h4>
+          <div class="ep-meta">${metaParts.join(' &middot; ')}</div>
+          <div class="ep-links">
+            ${platPill('spotify', links.spotify)}
+            ${platPill('apple', links.apple)}
+            ${platPill('youtube', links.youtube)}
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function mediaCardHTML(ep) {
+    const links = ep.links || {};
+    const badgeClass = BADGE_CLASS[ep.type] || 'badge-talk';
+    const label = ep.type ? ep.type.charAt(0).toUpperCase() + ep.type.slice(1) : 'Media';
+    const url = links.url || links.youtube || links.spotify || links.apple || '#';
+    const metaLabel = [ep.show, formatDate(ep.date)].filter(Boolean).join(' &middot; ');
+
+    return `
+      <a href="${escapeHtml(url)}" class="media-card" target="_blank" rel="noopener">
+        <span class="type-badge ${badgeClass}">${label}</span>
+        <div>
+          <h4>${escapeHtml(ep.title)}</h4>
+          <div class="media-meta">${metaLabel}</div>
+        </div>
+      </a>`;
+  }
+
+  function render(episodes) {
+    const list = document.getElementById('mediaList');
+    if (!list) return;
+
+    const hosted = episodes.filter(ep => ep.role === 'host');
+    const guestAppearances = episodes.filter(ep => ep.role !== 'host');
+
+    let html = '';
+    if (hosted.length) {
+      html += `<div class="media-group-label">Episodes I Host</div>`;
+      html += hosted.map(episodeCardHTML).join('');
+    }
+    if (guestAppearances.length) {
+      html += `<div class="media-group-label">Guest Appearances &amp; Talks</div>`;
+      html += guestAppearances.map(mediaCardHTML).join('');
+    }
+    html += `
+      <div class="media-card placeholder-card">
+        <span class="type-badge badge-video">Video</span>
+        <div>
+          <h4>New Episodes Coming Soon</h4>
+          <div class="media-meta">Product Talk Podcast &middot; Subscribe for updates</div>
+        </div>
+      </div>`;
+
+    list.innerHTML = html;
+  }
+
+  fetch('podcasts.json')
+    .then(res => res.json())
+    .then(data => render(data.episodes || []))
+    .catch(err => console.error('Could not load podcasts.json', err));
+})();
+</script>
+
+</body>
+</html>
